@@ -13,13 +13,13 @@ after_success:
 - git config user.email ${EMAIL}
 - rsync -az --delete --exclude '.git*' ../_site/ .
 - touch .nojekyll
-- git add --all
+- git add -A .
 - git commit -m "Generated Jekyll Site by Travis CI - ${TRAVIS_BUILD_NUMBER}"
 - git push --force "https://${DEPLOY_KEY}@${GH_REF}" HEAD:${TARGET_BRANCH}
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - GH_REF: github.com/nickdunn/bekonscot.git
+  - GH_REF: github.com/bekonscot/bekonscot.git
   - TARGET_BRANCH: gh-pages
   - secure: wNpAJGncFzYvVW+LAIvQX770Zg98Y9DpupVGacZj6t1F53AZQTjflPQW5HOEXUmsHVVMfFs6wp2rKHdcdd9ed0lGc7uD4lUdWBgiyykud3iFPSTGh3+kmKAvRwhJAr01WXM78nApYEAm/POvtISWS+7+06nDI8N8fs9t+a5fqri622quVTgQQuW7sN7S19RNPf3ALD0gyC0Ndwioc5ReSZRI09ngk81OxjePUbXidUakLpBThp+OpdVQkIN4KStlIPqnm3S2fv5JWprvEUgzXjcJrc/fck8BTd8c8aanQBzCEWhiMcxgts638rcrp2op65KbKwWSuzYHJW2o1saaGbOnDu96AiP5PcxA2+8HPQ2zmflFGUp2C8NSR9VIoQEvVxElaifcEG9Cq3j+Wx1lzSrAk1lnjemrKz2/828SS17REAwOv2J4UUSvwXEG7w+x47Vewxb4P3ZotD4EHeqUoUwaD6/7FUsLc2EgiOh1G7D3zRr8DHChO/zZZgTP+YWn8LkbUtSgdphDFGvV9icqsPscez6khFk3n8GT4x4tOBpo7ENiXtg84Jmw8ChKJ556p5R8NjywjofzmGoGduw4jFsRAuRqDu+7SSelRK6NWw8e+VZDZQa6tX/93yh1o4AIYKoLUw1lmGxqCmdl6nrBTRGG6vnGiPE4BA8QLBcnWeY=
   - secure: Y4R/ISBhKhazc/E8ZVjNjS01QyxY1xI7gfPIfQA47yyto439nuBIaq614z1DJJKL1yuVhZsW3D456KrYFftAJ3MDEzEhGLwgo75v2rK0b3ZWYuYnhOmCTcR9gh1ialz0WvKh1IPIe6ZPI7SezbPqaKlKm9MYCb4KiKUaCUVEDFcCOftryU/rtRayEMUd/pUHmNWCltdtJJX5h2PIW8EDkyKFw1ZJZIRRG8jFkKuiQNoUI4l3nR9tEa7QpBPgVCYSG7J/i90+jqhKNUBewM9i8Qu17x0dDATb/8yRS2MJ3TBgxw0BfhQUYGUbuzQy6EjPrr7mP7Krcq1iJuGUC3TrWRXAeRsIC4VomLikATEIQVHrDU5M0wK+A3+zyd0K6T8GJ7jD0EVMkb035RBhlrhuDV5ZAw8LI145hQ9ZYOIdk7kDjKRLdjogLqb29oodLnpuQJsC4F+JrmYNBDRz/N8VYUMX30zGrborCU2UQPk9IU0vw7ByP0/IDgb7vuR8oDH4QfOETTHh37jFTGWQJH5JyNfovICccTbIDtDPJOl/2qHZovzcu58/0iAyi9k2JyNlZ9samyZQT7pBQA1hoh2lEZF7F8dXiroC2dbqP/wSkugS3Hz6hjB88JLB0JeS1QPuCkh4qNgoKnKcc8ovWszEt8yPtOx07LMv464Y8HYIDUI=
