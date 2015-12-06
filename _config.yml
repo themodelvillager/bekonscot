@@ -7,7 +7,6 @@ gallerytag:
     dir: images
     url: /images
 
-# Site settings
 title: Bekonscot Model Village
 baseurl: "/bekonscot"
 url: "http://nickdunn.github.io" # the base hostname & protocol for your site
