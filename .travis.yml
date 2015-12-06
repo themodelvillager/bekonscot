@@ -15,7 +15,7 @@ after_success:
 - touch .nojekyll
 - git add --all
 - git commit -m "Generated Jekyll Site by Travis CI - ${TRAVIS_BUILD_NUMBER}"
-- git push -force "https://${DEPLOY_KEY}@${GH_REF}" HEAD:${TARGET_BRANCH}
+- git push --force "https://${DEPLOY_KEY}@${GH_REF}" HEAD:${TARGET_BRANCH}
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
