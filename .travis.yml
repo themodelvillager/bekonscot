@@ -1,0 +1,27 @@
+sudo: false
+language: ruby
+rvm:
+- 2.2
+branches:
+  only:
+  - jekyll
+script:
+- bundle exec jekyll build
+- bundle exec htmlproof ./_site --disable-external
+after_success:
+- git clone https://$GH_REF
+- cd $(basename ${GH_REF%.git})
+- git config user.name "Travis-CI"
+- git config user.email ${EMAIL}
+- rsync -az --delete --exclude '.git*' ../_site/ .
+- touch .nojekyll
+- git add -A .
+- git commit -m "Generated Jekyll Site by Travis CI - ${TRAVIS_BUILD_NUMBER}"
+- git push -f "https://${DEPLOY_KEY}@${GH_REF}" ${TARGET_BRANCH} > /dev/null 2>&1
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - GH_REF: github.com/nickdunn/bekonscot.git
+  - TARGET_BRANCH: gh-pages
+  - secure: ZiCU4jV6M4VFHnVI1I51KKAwSFpjf+uyBJcu9t/4kOROAwvqaRA5tfKIr+ybAQyBayuLCXPTJRdtZ/v5Qg19zBVeG10HH9U4yqXKboGM+iqO70gCukP+rLIxdLmTY5gfFGGFnucUa2vifik4fYY5XKt8FYmHQifBhd8yJfQFvJV4kSiIh5Xze6+mX3up7zmgm9f9pbx3OuyA9JTYHK7nvUUQ7vVWTOCpkaHiaLZ+QY+JW4hjn5PUPBaBLNR0l81KvQjI9hbaJ1dpD6BaVrlXDPGNSVSmyNSjZSaTXaJKNpfKGrFonlI+EvnxYhKKY0RPL995YUssyYF5M5dygxzO52f7lrAlBd+G3U0DTvRCMjGQ7AOXMGd1zyhyjlcGUrev1naFVLECo4JN9+6CWvAPgwjNbBxs2whfletxqsKqPvSYF+ILEGbWvH7yz9nMfXR1OBOI1FKpuvE+MvWYi/Gb8Op1sVxLGOX4Evc5xeM3mJgXRTP13e+N/LesHyZJ1TOTO2l3108uwOIA+Uml95IXHNzUg43+pBEvIIiAC9wbizyxukF0UZSvPikoCmEjfoPzB4l9hKcHMdk9m8VMhiYr36SE8CBMcciPHB1maCl2/ImfyjJfKkRXk6E2TsUdhO2+AlP8RKhKvZ39w/GTuNz99OXVBiYpYN3HhHhLB9JDt44=
+  - secure: wJ5IZJh/phN5XKkhk0rmlpI1SXlsWDVFLLFy/S0NNPdMvL9qnFLxmFlSfEkMvua30J/pKaLFWse1ZVeaKP9OIBg7oVtM1kYu4moyAPdiPLEcQGrB+U3x4MGdkt9csdB2BiXkcK1w/+U0de0LxMoxmuhdKYNO0jcoB8/Z/PJZNVOz+sW3vizeCG+GvpUnzrXnqzYK3a/6LyPUXye+92sZk/5NQEaCv0nly+kER0L1qQluFwarauIqctFvibMnISRe4iDx9F+ZjVv9ArygifMWpGrBAfgY+ED3Uk5rEeGUX9zJi9gaGzMg8Vwx3eXYWdJZzvBf+ijPzv4A1M4/WC0vMluc3GVmk+wDr+lP1cJCsyhIjwu1G8QYjwtZeSY9/aNZShB6ddoCuAhcO7AVVenohyqvHuhKh0p0kOijl2rLe0MJdJ65yxnndZrS+G4d4any0YGD/PFg4fCYxF/x84AERM03L70poBJ+bu3miuzF806PhrGC6gahOWW2cpmB+q2gf2VgG/XST2DWetMZnHoObi6oLCOBEtc9k6L15ZpU8ooqkAiy5fsYwQQdMUWkIgiX2cfsZ2ns87JxpgOkIZf5LnLuaQ9sL0XKeOeMYhfJTqINsRGCfAtUP84WSFp8b68Lfd7FawcBoI8WA/m0JlQqhBMgJaeptRA5qK7jHxgCDDo=
