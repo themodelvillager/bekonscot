@@ -4,4 +4,4 @@ This is an archive of content from the 2012 website for [Bekonscot Model Village
 
 It may now be out of date.
 
-[![Build Status](https://travis-ci.org/bekonscot/bekonscot.svg?branch=master)](https://travis-ci.org/bekonscot/bekonscot)
+[![Build Status](https://travis-ci.org/themodelvillager/bekonscot.svg?branch=master)](https://travis-ci.org/bekonscot/bekonscot)
