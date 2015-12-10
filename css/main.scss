@@ -4,50 +4,213 @@
 @charset "utf-8";
 
 
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
+$base-font-family: 'Gill Sans', 'Gill Sans MT', Helvetica, Arial, sans-serif;
+$base-font-size: 18px;
+$base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color: #333;
+$text-light: #777;
+$green-light-text: #c8dea8;
+$green-light: #86b648;
+$green-mid: #428f00;
+$green-dark: #2c460d;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$content-width: 800px;
 
-// Width of the content area
-$content-width:    800px;
+@mixin respond-to($size) {
+	@media (min-width: $size) {
+		@content;
+	}
+}
 
-$on-palm:          600px;
-$on-laptop:        800px;
+* {
+  box-sizing: border-box;
+}
 
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+	font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+	color: $text-color;
+	background-color: #fff;
+}
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+.header {
+  background: $green-mid;
+  color: $green-light-text;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  overflow: scroll;
+}
+
+.header__container {
+  padding: $spacing-unit 0;
+}
+
+.header__title {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+  margin-top: -5px;
+  display: block;
+
+  span {
+    font-weight: 200;
+  }
+}
+
+.header__description {
+  margin-bottom: 20px;
+
+  a {
+    color: $green-light-text;
+  }
+}
+
+.header__nav {
+  overflow: hidden;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 10px;
+
+    > ul {
+      display: none;
+      margin-left: 10px;
+      font-size: 14px;
     }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 1;
+    display: inline-block;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  li.active {
+    > a {
+      font-weight: 600;
+    }
+    > ul {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}
+
+.content {
+  margin-left: 310px;
+  max-width: 700px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+ul,
+ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+       margin-bottom: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+a {
+  color: $text-color;
+  text-decoration: underline;
+}
+
+.gallery {
+  overflow: hidden;
+  margin: $spacing-unit 0;
+
+  .gallery__image {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin: 0 $spacing-unit $spacing-unit 0 0;
+    position: relative;
+    border: 1px solid $green-mid;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    &:nth-child(3) {
+    	margin-right: 0;
+    }
+  }
+}
+
+.breadcrumb {
+  overflow: hidden;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: $text-light;
+
+  a {
+    color: $text-light;
+    display: inline-block;
+
+    &:after {
+      content: '\00BB';
+      display: inline-block;
+      margin: 0 0 0 4px;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+iframe {
+  margin: 20px 0;
+}

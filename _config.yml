@@ -12,5 +12,6 @@ baseurl: "/bekonscot"
 url: "http://nickdunn.github.io" # the base hostname & protocol for your site
 
 markdown: kramdown
+permalink: pretty
 
 exclude: [vendor]
