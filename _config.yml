@@ -3,13 +3,9 @@ defaults:
     values:
       layout: "default"
 
-gallerytag:
-    dir: images
-    url: /images
-
 title: Bekonscot Model Village
 baseurl: "/bekonscot"
-url: "http://nickdunn.github.io" # the base hostname & protocol for your site
+url: "http://themodelvillager.github.io"
 
 markdown: kramdown
 permalink: pretty
