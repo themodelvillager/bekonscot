@@ -1,18 +1,14 @@
 ---
-title: Bekonscot Model Village
+title: About Bekonscot
 layout: default
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Bekonscot Model Village and Railway is the world’s oldest original model village. It’s a tourist attraction near London, in Beaconsfield, Bucks.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+It was opened in 1929 and it’s a great place to bring the family and stomp around like giants! There are six model towns, a huge Gauge 1 model garden railway, ride-on railway, remote-controlled boats, castles, lakes and industries in 1.5 acres of award-winning gardens.
+
+It's a great family day out, and it's your chance to be a giant in a miniature land of adventure, hidden away in a 1930s timewarp. It’s a big day out full of really nice small things and we'd love to see you soon!
+
+## About this site
+
+This website is a collection of essays, articles and photos archived from the previous [Bekonscot website](http://bekonscot.co.uk) (no longer available). It was written by, and is now curated by [Tim Dunn](http://timdunn.com), and serves as an unofficial guide to the model village.
