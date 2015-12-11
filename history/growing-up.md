@@ -3,7 +3,7 @@ title: Growing Up
 order: 3
 ---
 
-Following the continued success of the original model village area, it was decided to significantly increase its size.  Previously, the village comprised [Bekonscot Town](/models-and-attractions/villages/bekonscot-town/), [Greenhaily](/models-and-attractions/villages/greenhaily/) windmill, [Evenlode](/models-and-attractions/villages/evenlode/) and [Southpool](/models-and-attractions/villages/southpool/) Docks. In 1945 the village of Splashyng was founded. Alexandra Lake was dug out and a likeness of Sydney Harbour Bridge was built to span the water and carry the branch railway out to Evenlode.
+Following the continued success of the original model village area, it was decided to significantly increase its size.  Previously, the village comprised [Bekonscot Town]({{ "/villages-and-models/bekonscot-town/" | prepend: site.baseurl }}), [Greenhaily]({{ "/villages-and-models/greenhaily/" | prepend: site.baseurl }}) windmill, [Evenlode]({{ "/villages-and-models/evenlode/" | prepend: site.baseurl }}) and [Southpool]({{ "/villages-and-models/southpool/" | prepend: site.baseurl }}) Docks. In 1945 the village of Splashyng was founded. Alexandra Lake was dug out and a likeness of Sydney Harbour Bridge was built to span the water and carry the branch railway out to Evenlode.
 
 {% vimeo 4013392 %}
 
