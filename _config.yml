@@ -3,7 +3,7 @@ defaults:
     values:
       layout: "default"
 
-title: Bekonscot Model Village
+title: Bekonscot Model Village; a guide to the oldest model village in the world
 baseurl: "/bekonscot"
 url: "http://themodelvillager.github.io"
 
