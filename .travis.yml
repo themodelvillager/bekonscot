@@ -6,7 +6,7 @@ branches:
   - master
 script:
 - bundle exec jekyll build
-- bundle exec htmlproof ./_site --disable-external --empty_alt_ignore
+- bundle exec htmlproof ./_site --disable-external --empty-alt-ignore
 after_success:
 - git clone https://$GH_REF
 - cd $(basename ${GH_REF%.git})
