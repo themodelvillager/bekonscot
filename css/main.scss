@@ -94,6 +94,21 @@ body {
   }
 }
 
+.header__meta {
+  border-top: 1px solid $green-light;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $green-light-text;
+  }
+}
+
 .header__nav {
   overflow: hidden;
 
@@ -108,8 +123,9 @@ body {
 
     > ul {
       display: none;
-      margin-left: 10px;
+      padding-left: 10px;
       font-size: 14px;
+      border-left: 1px solid $green-light;
     }
   }
 
@@ -182,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $text-color;
+  color: blue;
   text-decoration: underline;
 }
 
@@ -260,4 +276,8 @@ hr {
   background-color: #ccc;
   height: 1px;
   margin: 30px 0;
+}
+
+ul:empty {
+  display: none;
 }

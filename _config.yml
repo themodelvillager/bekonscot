@@ -6,8 +6,12 @@ defaults:
 title: Bekonscot Model Village; a guide to the oldest model village in the world
 baseurl: "/bekonscot"
 url: "http://themodelvillager.github.io"
+homepage_title: About Bekonscot
 
 markdown: kramdown
 permalink: pretty
+
+gems:
+  - jekyll-last-modified-at
 
 exclude: [vendor]

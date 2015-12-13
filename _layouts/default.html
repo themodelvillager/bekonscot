@@ -17,10 +17,15 @@
     <div class="header">
       <div class="header__container">
         <a class="header__title" href="{{ site.baseurl }}/">Bekonscot</a>
-        <p class="header__description">A guide to the oldest model village in the world. Curated by <a href="http://timdunn.com/">Tim Dunn</a>.</p>
+        <p class="header__description">A guide to the oldest model village in the world.</p>
         <nav class="header__nav">
           {% include navigation.html context="/" %}
         </nav>
+        <div class="header__meta">
+          <p>Curated by <a href="http://timdunn.com/">Tim Dunn</a>.</p>
+          <p>Contribute on <a href="https://github.com/themodelvillager/bekonscot">Github</a>.</p>
+          <p>Last updated on {% last_modified_at %d %B %Y %}.</p>
+        </div>
       </div>
     </div>
 

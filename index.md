@@ -11,6 +11,6 @@ It's a great family day out, and it's your chance to be a giant in a miniature l
 
 ## About this site
 
-This website is a collection of essays, articles and photos archived from the previous [Bekonscot website](http://bekonscot.co.uk) (no longer available). It was written by, and is now curated by [Tim Dunn](http://timdunn.com), and serves as an unofficial guide to the model village.
+This website is a collection of essays, articles and photos archived from the previous [Bekonscot website](http://bekonscot.co.uk) (no longer available). It is written and curated by [Tim Dunn](http://timdunn.com), now serving as an unofficial guide to the model village.
 
 You can contribute to this site by [opening a bug report or submitting a pull request](https://github.com/themodelvillager/bekonscot).
