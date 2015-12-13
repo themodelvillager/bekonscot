@@ -76,7 +76,11 @@ We have three sit-astride coaches fitted with anti-tip boards for extra safety. 
 </div>
 
 ### Mardyke Intercity 125
-Owned privately, this set is under full restoration and rebuild at Bekonscot. One power car is Mardyke Falcon, from Himley Hall Model Village in the West Midlands. Four of the coaches are also from this location. One of them was rescued as the bulldozers moved in, whilst the other three and the power car had previously been sold on to Parry People Movers and then regauged to 5” gauge for a private owner. The other power car and coach are by Mardyke and from the Strand Miniature Railway in Gillingham, Kent. The coach was obtained from a rubbish tip owned by the owner and donated to us. The power car (HMS Pembroke) appeared on eBay, despite it being thought that it had been scrapped some 15 years previously. The full set is too long to run at Bekonscot but occasionally makes an appearance on the circuit for test purposes. The set will visit other railways from late 2009. The complete set measures just over 70 feet in length and will have some very unusual features built in when complete.
+Owned privately, this set is under full restoration and rebuild at Bekonscot. One power car is Mardyke Falcon, from Himley Hall Model Village in the West Midlands. Four of the coaches are also from this location. One of them was rescued as the bulldozers moved in, whilst the other three and the power car had previously been sold on to Parry People Movers and then regauged to 5” gauge for a private owner. The other power car and coach are by Mardyke and from the Strand Miniature Railway in Gillingham, Kent.
+
+The coach was obtained from a rubbish tip owned by the owner and donated to us. The power car (HMS Pembroke) appeared on eBay, despite it being thought that it had been scrapped some 15 years previously.
+
+The full set is too long to run at Bekonscot but occasionally makes an appearance on the circuit for test purposes. The set will visit other railways from late 2009. The complete set measures just over 70 feet in length and will have some very unusual features built in when complete.
 
 <div class="gallery">
 {% directory path: images/intercity-125 %}
